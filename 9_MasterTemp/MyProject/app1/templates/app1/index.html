@@ -1,0 +1,15 @@
+<!--/MyProject/app1/templates/app1/index.html-->
+{% extends "master.html" %} 
+<!--
+    The file will automatically find master.html 
+    if the master template directory is added to project
+-->
+
+{% block page_title %} App1 {% endblock page_title %}
+
+<!-- ----- -->
+
+{% block content %}
+    <h1>Extends Master Template!</h1>
+    {% include "app1/includes/header.html" %}
+{% endblock content %}
