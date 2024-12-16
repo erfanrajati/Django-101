@@ -1,4 +1,10 @@
 {% extends "master.html" %}
+{% load static %}
+
+{% block head_ref %}
+    <link rel="stylesheet" href="{% static 'user/styles.css' %}">
+{% endblock head_ref %}
+
 
 {% block page_title %}
 User
