@@ -1,0 +1,12 @@
+
+.post_list {
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    padding: 100px 50px;
+    /* align-items: flex-start;  */
+    width: 900px;
+    background-color: #01100b;
+    border-radius: 75px;
+    flex-direction: column;
+}

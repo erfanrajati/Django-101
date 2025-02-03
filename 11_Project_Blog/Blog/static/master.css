@@ -1,0 +1,20 @@
+h1 {
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: max-content;
+    padding: 100px;
+    font-size: 80px;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #092E20;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #63d2a8;
+}

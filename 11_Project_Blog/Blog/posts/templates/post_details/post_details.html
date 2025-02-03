@@ -1,0 +1,32 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block header_refs %}
+    <link rel="stylesheet" href="{% static 'post_details/post_details.css' %}"> 
+{% endblock header_refs %}
+
+{% block title %}
+    Post {{ slug }}
+{% endblock title %}
+
+{% block content %}
+    <h1>Post Name: {{ title }}</h1>
+    <div id="mountain">
+        <img src="{% static 'posts/includes/images/'|add:image %}">
+    </div>
+
+    <p>Author: {{ author }}</p>
+
+    <h3>How to not be an idiot?</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consectetur quaerat, distinctio id facilis facere quas aliquid perspiciatis obcaecati ea corrupti iusto vitae, aperiam illum adipisci. Quia incidunt velit modi quaerat quis porro enim tempore suscipit laboriosam error, temporibus expedita nihil qui voluptas neque saepe quo asperiores odio libero itaque explicabo aperiam perspiciatis vel. Nesciunt, voluptate, nostrum dolorem incidunt atque quo culpa distinctio modi doloremque sapiente animi reprehenderit ratione at illum hic, iure numquam aperiam laudantium praesentium dolores quidem voluptatum doloribus provident? Expedita laboriosam a voluptates magni porro voluptatum dolorem eligendi perferendis natus repudiandae, aut, obcaecati nesciunt laborum, ab consequatur.
+    </p>
+    <h3>How to not be an idiot?</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consectetur quaerat, distinctio id facilis facere quas aliquid perspiciatis obcaecati ea corrupti iusto vitae, aperiam illum adipisci. Quia incidunt velit modi quaerat quis porro enim tempore suscipit laboriosam error, temporibus expedita nihil qui voluptas neque saepe quo asperiores odio libero itaque explicabo aperiam perspiciatis vel. Nesciunt, voluptate, nostrum dolorem incidunt atque quo culpa distinctio modi doloremque sapiente animi reprehenderit ratione at illum hic, iure numquam aperiam laudantium praesentium dolores quidem voluptatum doloribus provident? Expedita laboriosam a voluptates magni porro voluptatum dolorem eligendi perferendis natus repudiandae, aut, obcaecati nesciunt laborum, ab consequatur.
+    </p>
+    <p>
+        {{ content }}
+    </p>    
+
+{% endblock content %}

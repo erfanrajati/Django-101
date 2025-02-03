@@ -6,8 +6,8 @@ def index(request):
     return render(request, "main/index.html")
 
 
-def posts(request):
-    pass
+# def posts(request):
+#     return render()
 
 
 def single_post(request):

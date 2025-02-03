@@ -1,0 +1,20 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block title %}
+    Posts
+{% endblock title %}
+
+{% block header_refs %}
+    <link rel="stylesheet" href="{% static 'posts/includes/post.css' %}">
+    <link rel="stylesheet" href="{% static 'posts/style.css' %}">
+{% endblock header_refs %}
+
+{% block content %}
+    <h1>Posts Page</h1>
+    <div class="post_list">
+        {% for post in data %}
+            {% include 'posts/includes/post.html' %}
+        {% endfor %}
+    </div>
+{% endblock content %}

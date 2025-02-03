@@ -1,0 +1,22 @@
+body {
+    background-color: #092E20;
+}
+
+
+
+.btn {
+    display: flex;
+    box-sizing: border-box;
+    width: max-content;
+    margin: 0 auto;
+    /* text-align: center; */
+    font-size: 64px;
+    padding: 30px 50px;
+    background-color: #02150e;
+    border-radius: 45px;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 0 30px 5px #00c982;
+}

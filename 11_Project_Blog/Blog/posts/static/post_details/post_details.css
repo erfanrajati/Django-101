@@ -1,0 +1,22 @@
+h3 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+p {
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+#mountain {
+    display: flex;
+}
+
+#mountain img {
+    margin: auto;
+    width: 1500px;
+    height: auto;
+    padding: 30px;
+    border-radius:80px;
+}

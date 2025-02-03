@@ -1,0 +1,50 @@
+a:hover {
+    text-decoration: none;
+}
+.post {
+    margin: 0 auto;
+    background-color: white;
+    color: #092E20;
+    display: flex;
+    border-radius: 40px;
+    align-items: flex-start; 
+    padding: 10px;
+    width: 800px;           /* Set width for the rectangle */
+    gap: 10px;   
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+.post img {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 28px;
+    transition: all .3s ease-in-out;
+}
+
+.post .text_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.post .text_container h5 {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0 20px 0;
+    transition: all .1s ease-in-out;
+}
+
+.post .text_container p {
+    margin: 0 10px;
+}
+
+.post:hover {
+    background-color: #c3f3e0;
+}
+
+.post img:hover {
+    width: 370px;
+    height: 370px;
+    border-radius: 33px;
+}
