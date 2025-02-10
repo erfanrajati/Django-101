@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_refs %}
+<link rel="stylesheet" href="{% static '/products/css/products.css' %}">
+{% endblock %}
+
+{% block title %}
+Product List
+{% endblock %}
+
+{% block body_refs %}
+<h1>Hello, World!</h1>
+
+<ul>
+    {% for prod in products %}
+        <li>
+            <a href="">
+                {{ prod.name }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
