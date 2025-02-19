@@ -6,9 +6,10 @@
 {% endblock %}
 
 {% block title %}
-Product List
+{{ product.name }}
 {% endblock %}
 
 {% block body_refs %}
-<h1>Hello, World!</h1>
+<h1>{{ product.name }}</h1>
+<h2>{{ product.price }}</h2>
 {% endblock %}
