@@ -15,7 +15,7 @@ Product List
 <ul>
     {% for prod in products %}
         <li>
-            <a href="{% url 'product_details' id=prod.id %}">
+            <a href="{% url 'product_details' slug=prod.slug %}">
                 {{ prod.name }}
             </a>
         </li>

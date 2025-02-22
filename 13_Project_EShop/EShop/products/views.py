@@ -12,9 +12,9 @@ def products(request):
         context={'products':products}
     )
 
-def product_details(request, id):
+def product_details(request, slug):
     try:
-        product = Product.objects.get(id=id)
+        product = Product.objects.get(slug=slug)
     except:
         raise Http404
     return render(
