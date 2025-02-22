@@ -5,11 +5,15 @@ from django.http import Http404
 # Create your views here.
 
 def products(request):
-    products = Product.objects.all()
+    products = Product.objects.all().order_by('name')
+    prod_count = products.count()
     return render(
         request, 
         'products/products.html', 
-        context={'products':products}
+        context={
+            'products':products,
+            'prod_count':prod_count,
+        }
     )
 
 def product_details(request, slug):
