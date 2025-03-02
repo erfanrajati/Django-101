@@ -13,6 +13,7 @@ class Category(models.Model):
     
     def save(self, *args, **kwargs):
         self.url_title = slugify(self.name)
+        super().save(*args, **kwargs)
 
 
 
