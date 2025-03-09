@@ -22,7 +22,7 @@ class Product(models.Model):
     price = models.IntegerField(default=0)
     is_active = models.BooleanField(default=True)
     slug = models.SlugField(default="", unique=True, blank=True)
-    categgory = models.ForeignKey( # This is the foreign key
+    category = models.ForeignKey( # This is the foreign key
         Category, 
         on_delete=models.CASCADE,
         null=True
