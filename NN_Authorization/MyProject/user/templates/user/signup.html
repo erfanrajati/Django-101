@@ -6,10 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'user/style.css' %}">
-    <title>Dashboard</title>
+    <title>Sign Up</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <a href="{% url 'signup' %}">Go to signup page</a>
+    <form action="{% url 'signup' %}" method="post">
+        {% csrf_token %}
+        {{ signup_form.as_p }}
+        <button type="submit">Sign Up</button>
+    </form>
 </body>
 </html>
